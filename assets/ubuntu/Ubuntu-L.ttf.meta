@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: d2cacca726663554289aea20b9d19bbb
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Ubuntu
+  fontNames:
+  - Ubuntu
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 07b80c101c40c2f4d90c9c5cf36eb074, type: 3}
+  - {fileID: 12800000, guid: 9610afa042be6664ba6bafe073964b32, type: 3}
+  - {fileID: 12800000, guid: ab2530831acf2644d8fa83504e28466f, type: 3}
+  - {fileID: 12800000, guid: 733cb1f3f34a00245aad9db1b8d0bc5a, type: 3}
+  - {fileID: 12800000, guid: 345700e5955d060438a70e45d29037aa, type: 3}
+  - {fileID: 12800000, guid: c2941089a9d180944962f2e5f1d5d16b, type: 3}
+  - {fileID: 12800000, guid: b22f0c4ef3fd7ba48848bcd672d6a7e7, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
