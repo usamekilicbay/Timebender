@@ -211,51 +211,6 @@ namespace GoogleMobileAds.iOS
 
         #endregion
 
-        #region RewardedAd externs
-
-        [DllImport("__Internal")]
-        internal static extern IntPtr GADUCreateRewardedAd(IntPtr rewardedAd, string adUnitId);
-
-        [DllImport("__Internal")]
-        internal static extern bool GADURewardedAdReady(IntPtr rewardedAd);
-
-        [DllImport("__Internal")]
-        internal static extern void GADUShowRewardedAd(IntPtr rewardedAd);
-
-        [DllImport("__Internal")]
-        internal static extern void GADURequestRewardedAd(
-            IntPtr rewardedAd, IntPtr request);
-
-        [DllImport("__Internal")]
-        internal static extern void GADUSetRewardedAdCallbacks(
-            IntPtr rewardedAd,
-            RewardedAdClient.GADURewardedAdDidReceiveAdCallback
-                    adReceivedCallback,
-            RewardedAdClient.GADURewardedAdDidFailToReceiveAdWithErrorCallback
-                    adFailedToLoadCallback,
-            RewardedAdClient.GADURewardedAdDidFailToReceiveAdWithErrorCallback
-                    adFailedToShowCallback,
-            RewardedAdClient.GADURewardedAdDidOpenCallback didOpenCallback,
-            RewardedAdClient.GADURewardedAdDidCloseCallback didCloseCallback,
-            RewardedAdClient.GADUUserEarnedRewardCallback userEarnedRewardCallback);
-
-        [DllImport("__Internal")]
-        internal static extern IntPtr GADUCreateServerSideVerificationOptions();
-
-        [DllImport("__Internal")]
-        internal static extern void GADUServerSideVerificationOptionsSetUserId(IntPtr options, string userId);
-
-        [DllImport("__Internal")]
-        internal static extern void GADUServerSideVerificationOptionsSetCustomRewardString(IntPtr options, string customRewardString);
-
-        [DllImport("__Internal")]
-        internal static extern void GADURewardedAdSetServerSideVerificationOptions(IntPtr rewardedAd, IntPtr options);
-
-        [DllImport("__Internal")]
-        internal static extern IntPtr GADUMediationAdapterClassNameForRewardedAd(IntPtr rewardedVideo);
-
-        #endregion
-
         #region AdLoader externs
 
         [DllImport("__Internal")]
@@ -264,8 +219,7 @@ namespace GoogleMobileAds.iOS
             string adUnitId,
             string[] templateIds,
             int templateIdsCount,
-            ref NativeAdTypes types,
-            bool returnUrlsForImageAssets);
+            ref NativeAdTypes types);
 
         [DllImport("__Internal")]
         internal static extern void GADURequestNativeAd(IntPtr adLoader, IntPtr request);
@@ -319,6 +273,7 @@ namespace GoogleMobileAds.iOS
                     adClickedCallback);
 
         #endregion
+
     }
 }
 

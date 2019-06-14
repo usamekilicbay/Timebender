@@ -14,7 +14,7 @@ public class SoundManager : MonoBehaviour
     public AudioClip scoreSound;
     public AudioClip gameOverSound;
 
-    public AudioClip mainTheme;
+    //public AudioClip mainTheme;
     public AudioClip gameTheme;
 
 
@@ -25,6 +25,6 @@ public class SoundManager : MonoBehaviour
     public void GameOverSound() { soundEffect.PlayOneShot(gameOverSound); }
 
 
-    public void MainTheme() { musicSource.clip = mainTheme; }
+   // public void MainTheme() { musicSource.clip = mainTheme; }
     public void GameTheme() { musicSource.clip = gameTheme; }
 }

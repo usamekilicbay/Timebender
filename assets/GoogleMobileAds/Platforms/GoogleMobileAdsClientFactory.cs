@@ -14,11 +14,9 @@
 
 using GoogleMobileAds.Api;
 using GoogleMobileAds.Common;
-using UnityEngine.Scripting;
-[assembly: Preserve]
+
 namespace GoogleMobileAds
 {
-    [Preserve]
     public class GoogleMobileAdsClientFactory
     {
         public static IBannerClient BuildBannerClient()
@@ -36,7 +34,6 @@ namespace GoogleMobileAds
             #endif
         }
 
-        [Preserve]
         public static IInterstitialClient BuildInterstitialClient()
         {
             #if UNITY_EDITOR
@@ -52,7 +49,6 @@ namespace GoogleMobileAds
             #endif
         }
 
-        [Preserve]
         public static IRewardBasedVideoAdClient BuildRewardBasedVideoAdClient()
         {
             #if UNITY_EDITOR
@@ -68,23 +64,6 @@ namespace GoogleMobileAds
             #endif
         }
 
-        [Preserve]
-        public static IRewardedAdClient BuildRewardedAdClient()
-        {
-            #if UNITY_EDITOR
-                // Testing UNITY_EDITOR first because the editor also responds to the currently
-                // selected platform.
-                return new GoogleMobileAds.Common.RewardedAdDummyClient();
-            #elif UNITY_ANDROID
-                return new GoogleMobileAds.Android.RewardedAdClient();
-            #elif (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
-                return new GoogleMobileAds.iOS.RewardedAdClient();
-            #else
-                return new GoogleMobileAds.Common.RewardedAdDummyClient();
-            #endif
-        }
-
-        [Preserve]
         public static IAdLoaderClient BuildAdLoaderClient(AdLoader adLoader)
         {
             #if UNITY_EDITOR
@@ -100,7 +79,6 @@ namespace GoogleMobileAds
             #endif
         }
 
-        [Preserve]
         public static IMobileAdsClient MobileAdsInstance()
         {
             #if UNITY_EDITOR

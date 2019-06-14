@@ -13,7 +13,6 @@
 // limitations under the License.
 
 using System;
-using System.Collections;
 using System.Collections.Generic;
 
 using UnityEngine;
@@ -46,5 +45,6 @@ namespace GoogleMobileAds.Common
 
             return nativeAdTexture;
         }
+
     }
 }

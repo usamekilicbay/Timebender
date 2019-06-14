@@ -120,7 +120,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 0.5
+  bundleVersion: 8
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -164,7 +164,7 @@ PlayerSettings:
     Android: com.OrendaVStudios.Timebender
     Standalone: com.OrendaVStudios.Timebender
   buildNumber: {}
-  AndroidBundleVersionCode: 5
+  AndroidBundleVersionCode: 8
   AndroidMinSdkVersion: 16
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 0
@@ -276,7 +276,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: ed181007fb12ab7459291058339aabaf, type: 3}
+      m_Icon: {fileID: 2800000, guid: 18dde2a316b02f947ace46744dd50df0, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
@@ -628,7 +628,7 @@ PlayerSettings:
     Standalone: 0
   il2cppCompilerConfiguration: {}
   managedStrippingLevel:
-    Android: 3
+    Android: 1
   incrementalIl2cppBuild: {}
   allowUnsafeCode: 0
   additionalIl2CppArgs: 
@@ -636,7 +636,7 @@ PlayerSettings:
   gcIncremental: 0
   gcWBarrierValidation: 0
   apiCompatibilityLevelPerPlatform:
-    Android: 3
+    Android: 6
     Standalone: 3
   m_RenderingPath: 1
   m_MobileRenderingPath: 1

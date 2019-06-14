@@ -13,13 +13,13 @@ public class GecisReklami : MonoBehaviour
     public float waitsec;
     public float adsShowTime;
     public float firstAdsShowTime;
-   // string adIDs = "ca-app-pub-3940256099942544/1033173712";
-    string adIDs = "ca-app-pub-5489432413164397/3614904359";
+    //string adIDs = "ca-app-pub-3940256099942544/1033173712"; // it's test id
+    string adIDs = "ca-app-pub-5489432413164397/3614904359"; //it's my interstitial ad id
     InterstitialAd interstitial;
     public void Start()
     {
         RequestInterstitial();
-        StartCoroutine(IlkRelamiGoster());
+        //StartCoroutine(IlkRelamiGoster());
     }
     // reklamı yükler
     private void RequestInterstitial()
@@ -82,7 +82,7 @@ public class GecisReklami : MonoBehaviour
         //status.text = "User Left";
         StartCoroutine(ResetTexts());
     }
-    IEnumerator IlkRelamiGoster()
+    /*IEnumerator IlkRelamiGoster()
     {
         yield return new WaitForSeconds(firstAdsShowTime);
         if (this.interstitial.IsLoaded())
@@ -94,9 +94,8 @@ public class GecisReklami : MonoBehaviour
 
         RequestInterstitial();
 
-    }
+    }*/
     IEnumerator ShowAds()//bura tekrar çağrılınca 100 saniye sonra yani tekrar ilk reklamı da çağırmaz mı ? 
-
     {
         yield return new WaitForSeconds(adsShowTime);// burası süreyi bekliyor
         if (this.interstitial.IsLoaded())// reklamın yüklendiğini kontrol eder

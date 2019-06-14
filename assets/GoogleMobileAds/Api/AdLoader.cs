@@ -15,7 +15,6 @@
 using System;
 using System.Collections.Generic;
 using System.Reflection;
-using UnityEngine;
 
 using GoogleMobileAds.Common;
 
@@ -106,6 +105,7 @@ namespace GoogleMobileAds.Api
             {
                 get; private set;
             }
+
 
             public Builder ForCustomNativeAd(string templateId)
             {
